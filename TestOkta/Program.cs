@@ -21,6 +21,7 @@ var apiconfig = new OktaApiClientOptions(oktaConfig, oauthTokenProvider, httpMes
 var apiClient = new ApiClient(apiconfig);
 var groupApi = new GroupApi(apiconfig);
 
+Console.WriteLine($"Dotnet version: {System.Environment.Version}");
 Console.WriteLine($"Okta SDK Version: {typeof(Configuration).Assembly.GetName().Version}");
 
 Console.WriteLine();
